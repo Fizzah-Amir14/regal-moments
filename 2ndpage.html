@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible " content="TE=edge">
+    <meta name="viewport" content="width=device-width,initial -scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="eventmanagementform.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="box-1">
+            <h1>Register for the Event</h1>
+            <p>Please fill out the form below to secure your spot at the event. We look forward to seeing you there.</p>
+        </div>
+    </header>
+
+    <main>
+        <form action="process.php" method="POST">
+            <div class="box-2">
+
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" placeholder="Enter First Name">
+
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Enter Last Name">
+
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="abc@xyz.com">
+
+                <label for="phoneno">Phone Number</label>
+                <input type="text" name="phoneno" placeholder="03xx-xxxxxxx">
+
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer not to say">Prefer not to say</option>
+                </select>
+
+                <label for="bookingdate">Booking Date</label>
+                <input type="date" name="bookingdate">
+
+                <label>Payment Method</label>
+                <div>
+                    <input type="radio" id="cash" name="paymentmethod" value="Cash">
+                    <label for="cash">Cash</label>
+
+                    <input type="radio" id="card" name="paymentmethod" value="Card">
+                    <label for="card">Card</label>
+
+                    <input type="radio" id="online" name="paymentmethod" value="Online">
+                    <label for="online">Online</label>
+                </div>
+
+                <label for="time">Select Time</label>
+                <input type="time" id="time" name="time">
+
+                <label>Event Type</label>
+                <div>
+                    <input type="radio" id="workshop" name="eventtype" value="Workshop">
+                    <label for="workshop">Workshop</label>
+
+                    <input type="radio" id="wedding" name="eventtype" value="Wedding">
+                    <label for="wedding">Wedding</label>
+
+                    <input type="radio" id="seminar" name="eventtype" value="Seminar">
+                    <label for="seminar">Seminar</label>
+                </div>
+
+                <label for="numberofguest">Number of Guests</label>
+                <input type="number" name="numberofguest" placeholder="100">
+
+                <label for="uploadfile">Upload Document</label>
+                <input type="file" name="uploadfile">
+
+                <label for="message">Type Message</label>
+                <textarea name="message" placeholder="Type Additional Information"></textarea>
+
+                <button type="submit"><strong>Submit</strong> ✔</button>
+            </div>
+        </form>
+
+
+        <div class="lastpage">
+            <h3>Thank You for Registering!</h3>
+            <p>We’ve received your information and will contact you shortly.</p>
+            <p>Here are some sample images from our work:</p>
+
+        </div>
+
+
+        <div class="image1">
+            <a href="wedding.jpg"><img src="wedding.jpg" alt="Wedding Event"></a> </div>
+            <div class="image2"><a href="bdyimage.jpg"><img src="bdyimage.jpg" alt="Birthday Event"></a></div>
+             <div class="image3"> <a href="seminar.jpg"><img src="seminar.jpg" alt="Seminar Event"></a></div>
+           
+      
+
+    </main>
+
+   
+
+    <footer>
+        <details>
+            <summary>Click to Read More</summary>
+            <p><strong>Event Location:</strong> COMSATS University, Islamabad Campus</p>
+            <p><strong>Event Date:</strong> August 25, 2025</p>
+            <p><strong>Timings:</strong> 10:00 AM to 4:00 PM</p>
+            <p><strong>Instructions:</strong> Please bring your CNIC or Student ID. Snacks and water will be provided.
+            </p>
+            <p><strong>Need Help?</strong> Contact us at <a
+                    href="mailto:Eventmanagemnt@gmail.com">Eventmanagemnt@gmail.com</a></p>
+        </details>
+
+        <p>&copy; 2025 CopyRight Reserved. <br><br></b><strong><em><a
+                        href="mailto:Eventmanagemnt@gmail.com">Email</a></em></strong>
+        </p>
+    </footer>
+
+</body>
+
+</html>

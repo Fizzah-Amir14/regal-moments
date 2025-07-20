@@ -1,0 +1,175 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body {
+    background-image: url('webpage1.jpg'); /* ✅ Replace with your real image file name */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.welcome-section {
+
+    font-family: sans-serif;
+
+    background-attachment: fixed;
+    color: black;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 50px;
+
+}
+
+.maincontainer {
+    margin-left: 30px;
+    border-top: 30px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #DA70D6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.maincontainer:hover {
+    background-color: black;
+    color: #DA70D6;
+}
+
+.pclass {
+    padding: 20px;
+    margin-top: 90px;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #bb2d9f;
+    color: white;
+    /* border: 10px solid white; */
+    border-radius: 20px;
+}
+
+.pclass:hover {
+    background-color: #9a2483;
+    color: #f0d6ec;
+}
+
+.events-box {
+    background-color: #c44d99;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 20vw;
+    height: 40vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-box:hover {
+    background-color: black;
+    color: #c44d99;
+}
+
+.register-section {
+    /* background-image: linear-gradient(to right, #9932CC, DarkMagenta); */
+    background-color: #DB7093;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 340px;
+    padding: 20px;
+    width: max-content;
+    border-radius: 20px;
+
+
+
+}
+
+.register-section:hover {
+    background-color: #800080;
+    color: #ffffff;
+}
+
+.a {
+    background-color: #bb2d9f;
+    color: wheat;
+    border: 10px;
+    padding: 10px;
+}
+
+.a:hover {
+    background-color: #9a2483;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: 10px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 40px;
+
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.image-gallery {
+    grid-gap: 30px;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: start;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 210px;
+    margin-left: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
